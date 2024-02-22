@@ -20,6 +20,13 @@
 
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
+    
+    <style>
+      .img-thumbnail {
+          width: 200px;
+          height: 200px;
+      }
+  </style>
 
   </head>
 
@@ -53,7 +60,7 @@
     <header class="masthead">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
-        	<img src="img\imgbruno.jpg" class="img-thumbnail">
+        	<img src="img\FotoPerfil.png" class="img-thumbnail">
           <h1 class="mx-auto my-0 text-capitalize">Bruno Campos</h1>
           <h2 class="text-white-50 mx-auto mt-2 mb-5">Nesta Página conto um pouco das minhas experiências e projetos que participei.</h2>
           <a href="#about" class="btn btn-primary js-scroll-trigger">Vamos Conhecer</a>
@@ -67,7 +74,7 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2 class="text-white mb-4">Sobre</h2>
-            <p class="text-white-50">Atualmente Desenvolvendo aplicações web com as linguagens de programação Javascript,Php e Frameworks .NET,Bootstrap,Laravel e também projetos voltados a desktop usando as linguagens C,C++,C# e Java ou seja tenho conhecimento tanto backend quanto frontend porém sempre aperfeiçoando e buscando Conhecimento.
+            <p class="text-white-50">Atualmente Desenvolvendo aplicações web com as linguagens de programação Javascript,Php e Frameworks .NET,Bootstrap,Laravel,Vue.js,Angular,Node.js e também projetos voltados a desktop usando as linguagens C,C++,C# e Java ou seja tenho conhecimento tanto backend quanto frontend porém sempre aperfeiçoando e buscando Conhecimento.
           </div>
         </div>
         <img src="img/ipad.png" class="img-fluid" alt="">
@@ -201,7 +208,7 @@
                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                 <h4 class="text-uppercase m-0">Endereço</h4>
                 <hr class="my-4">
-                <div class="small text-black-50">Al. Joaquim Eugênio de Lima,155</div>
+                <div class="small text-black-50">Rua Rocha, 464</div>
               </div>
             </div>
           </div>
@@ -251,14 +258,18 @@
 
     <!-- Footer -->
     <footer class="bg-black small text-center text-white-50">
-      <div class="container">
-        Copyright &copy; Bruno Campos 2018
+      <div class="container" id="anoAtualContainer">
+          Copyright &copy; Bruno Campos <span id="anoAtual"></span>
       </div>
-    </footer>
+  </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // JavaScript para obter e exibir o ano atual
+      document.getElementById("anoAtual").innerText = new Date().getFullYear();
+    </script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
